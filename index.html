@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="images/delhi.jpg" alt="1" />
+          <h1>delhi</h1>
+          <div class="details">
+            <h2>delhi</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/kashmir.jpg" alt="2" />
+          <h1>Kashmir</h1>
+          <div class="details">
+            <h2>Kashmir</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/himalaya.jpg" alt="3" />
+          <h1>himalaya</h1>
+          <div class="details">
+            <h2>himalaya</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="images/banaras.jpg" alt="4" />
+          <h1>Banaras</h1>
+          <div class="details">
+            <h2>banaras</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/rajasthan.jpg" alt="5" />
+          <h1>Rajasthan</h1>
+          <div class="details">
+            <h2>Rajasthan</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/gujrat.jpg" alt="6" />
+          <h1>Gujrat</h1>
+          <div class="details">
+            <h2>gujrat</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images/mumbai.jpg" alt="7" />
+          <h1>Mumbai</h1>
+          <div class="details">
+            <h2>Mumbai</h2>
+            <p>[detail]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
